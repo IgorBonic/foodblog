@@ -87,11 +87,18 @@ button {
 }
 
 .picGallery {
+    @media screen and (min-width: 481px) and (max-width: 800px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr) ;
+    }
+
+
+
     @media screen and( max-width: 480px) {
         display: flex;
         flex-direction: column;
     }
-
     padding: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -152,7 +159,7 @@ button {
 
 
 
-
+/*Here starts the css for the recipes page */
 
 
 
@@ -198,3 +205,38 @@ h3{
 
     
 }
+
+
+/*Here starts the Css for the About Us Page */
+
+ .main1 div {
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ .teamtext ,h1,p,button {
+    text-align: center;
+    p{
+        margin: 10px;
+        font-family: 'Happy Monkey', cursive;
+
+    }
+   
+    }
+.main1  {
+    margin:35px 0px;
+    text-align: center;
+    
+   
+}
+.imgaboutus {
+    padding: 40px;
+    height:100%;
+    width: 100%;
+    object-position: center;
+    object-fit:cover;
+}
+
+ 
+

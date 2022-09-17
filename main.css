@@ -87,6 +87,13 @@ button:hover {
   grid-template-rows: repeat(3, 300px);
   gap: 25px;
 }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .picGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
 @media screen and (max-width: 480px) {
   .picGallery {
     display: flex;
@@ -138,6 +145,7 @@ button:hover {
   list-style: none;
 }
 
+/*Here starts the css for the recipes page */
 .mainContent div {
   display: flex;
   justify-content: center;
@@ -173,4 +181,33 @@ h3 {
 }
 .instruction div {
   margin: 15px;
+}
+
+/*Here starts the Css for the About Us Page */
+.main1 div {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamtext, h1, p, button {
+  text-align: center;
+}
+.teamtext p, h1 p, p p, button p {
+  margin: 10px;
+  font-family: "Happy Monkey", cursive;
+}
+
+.main1 {
+  margin: 35px 0px;
+  text-align: center;
+}
+
+.imgaboutus {
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
